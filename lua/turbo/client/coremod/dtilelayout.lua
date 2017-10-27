@@ -47,8 +47,6 @@ function turbo.PatchDTileLayout()
 			x = 1
 		end
 	end
-
-	print( "DTileLayout patched" )
 end
 
 
