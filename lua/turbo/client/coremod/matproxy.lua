@@ -9,7 +9,7 @@ function turbo.PatchMatproxy()
 		( matproxy.ActiveList[ name ] or emptyCall ):bind( mat, ent )
 	end
 
-	-- remove SkyPaint overhead
+	--[[ remove SkyPaint overhead
 	matproxy.Add( {
 		name = "SkyPaint",
 		init = function( a, b, c ) end,
@@ -40,7 +40,7 @@ function turbo.PatchMatproxy()
 				mat:SetInt( "$STARLAYERS", 0 )
 			end
 		end
-	} )
+	} )]]
 end
 
 
@@ -53,7 +53,7 @@ end )
 hook.Add( "TurboUnload", "Turbo Matproxy TurboUnload", function()
 	matproxy.Call = matproxy_Call
 
-	-- old sky_paint.lua
+	--[[ old sky_paint.lua
 	matproxy.Add( {
 		name = "SkyPaint",
 	
@@ -88,5 +88,5 @@ hook.Add( "TurboUnload", "Turbo Matproxy TurboUnload", function()
 			end
 	
 		end
-	} )
+	} )]]
 end )
