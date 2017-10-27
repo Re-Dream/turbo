@@ -19,7 +19,7 @@ local function loadFolder( path, realm )
 		if realm == 1 or realm == 3 then AddCSLuaFile( fullPath ) end
 		if realm == 1 or ( realm == 2 and SERVER ) or ( realm == 3 and CLIENT ) then include( fullPath ) end
 
-		impact.Print( fullPath )
+		turbo.Print( fullPath )
 	end
 
 	for _, v in pairs( folders ) do if v ~= "disabled" then loadFolder( path .. v .. "/", realm ) end end
